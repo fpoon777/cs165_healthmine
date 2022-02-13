@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/menu_title_activities">
+            <menu>
+                <item
+                    android:id="@+id/nav_activity"
+                    android:icon="@drawable/ic_menu_cgm"
+                    android:title="Review your Activity"/>
+                <item
+                    android:id="@+id/nav_cgm"
+                    android:icon="@drawable/ic_menu_activity"
+                    android:title="@string/menu_cgm" />
+                <item
+                    android:id="@+id/nav_sleep"
+                    android:icon="@drawable/ic_baseline_king_bed_24"
+                    android:title="SLEEP" />
+            </menu>
+        </item>
+
+        <item android:title="@string/menu_title_self_report">
+            <menu>
+                <item
+                    android:id="@+id/nav_self_report"
+                    android:icon="@drawable/ic_menu_self_report"
+                    android:title="@string/menu_self_report" />
+            </menu>
+        </item>
+
+        <item android:title="@string/menu_title_setting">
+            <menu>
+                <item
+                    android:id="@+id/nav_setting"
+                    android:icon="@drawable/ic_menu_setting"
+                    android:title="@string/menu_settings" />
+
+                <item
+                    android:id="@+id/nav_feedback"
+                    android:icon="@drawable/ic_menu_self_report"
+                    android:title="@string/menu_feedback" />
+            </menu>
+        </item>
+    </group>
+</menu>

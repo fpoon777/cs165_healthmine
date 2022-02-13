@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Feeling: "
+            android:layout_marginRight="5dp"
+            android:textColor="@color/purple_dark"
+            style="@style/BodyTextStyle1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/history_feel"
+            android:text="DUMMY TEXT"
+            android:textColor="@color/purple_dark"
+            style="@style/BodyTextStyle1"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="Self-Report #"-->
+<!--            android:textColor="@color/theme_purple"-->
+<!--            android:layout_marginRight="5dp"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/history_id"-->
+<!--            android:text="DUMMY ID"-->
+<!--            android:textColor="@color/theme_purple"-->
+<!--            android:layout_marginRight="5dp"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="Reported on:"-->
+<!--            android:textColor="@color/theme_purple"-->
+<!--            android:layout_marginRight="5dp"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/history_date"
+            android:textColor="@color/purple_dark"
+            android:text="DUMMY TIME"
+            style="@style/BodyTextStyle2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Self Report #"
+                    android:layout_marginRight="5dp"
+                    style="@style/BodyTextStyle3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/history_id"
+                    android:text="DUMMY ID"
+                    style="@style/BodyTextStyle3"
+                    android:layout_marginRight="5dp"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="Feeling: "-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:textColor="@color/theme_purple"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/history_feel"-->
+<!--            android:text="DUMMY TEXT"-->
+<!--            android:textColor="@color/theme_purple"/>-->
+    </LinearLayout>
+</LinearLayout>

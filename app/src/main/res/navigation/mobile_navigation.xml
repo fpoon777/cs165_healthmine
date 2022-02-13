@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_activity">
+
+    <fragment
+        android:id="@+id/nav_activity"
+        android:name="com.example.healthmine.ui.activityrecognition.ActivityRecognition"
+        android:label="Activity Recognition"
+        tools:layout="@layout/activity_recognition_layout" />
+
+    <fragment
+        android:id="@+id/nav_cgm"
+        android:name="com.example.healthmine.ui.cgm.CgmFragment"
+        android:label="@string/menu_cgm"
+        tools:layout="@layout/fragment_cgm" />
+
+    <fragment
+        android:id="@+id/nav_sleep"
+        android:name="com.example.healthmine.ui.sleep.SleepFragment"
+        android:label="SLEEP"
+        tools:layout="@layout/fragment_sleep" />
+
+    <fragment
+        android:id="@+id/nav_self_report"
+        android:name="com.example.healthmine.ui.self_report.SelfReportHolderFragment"
+        android:label="@string/menu_self_report"
+        tools:layout="@layout/interface_self_report" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.healthmine.ui.setting.SettingFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.example.healthmine.ui.feedback.FeedbackFragment"
+        android:label="@string/menu_feedback"
+        tools:layout="@layout/fragment_feedback" />
+</navigation>

@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Healthmine" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_medium</item>
+        <item name="colorPrimaryVariant">@color/purple_medium</item>
+        <item name="colorOnPrimary">@color/purple_dark</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/purple_medium</item>
+        <item name="colorSecondaryVariant">@color/purple_dark</item>
+        <item name="colorOnSecondary">@color/purple_dark</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionMenuTextColor">@color/purple_dark</item>
+        <item name="android:actionMenuTextColor">@color/purple_dark</item>
+
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+        <item name="colorPrimary">@color/purple_medium</item>
+        <item name="colorPrimaryDark">@color/purple_medium</item>
+        <item name="colorAccent">@color/purple_medium</item>
+        <item name="android:statusBarColor">@color/bg_white</item>
+    </style>
+
+    <style name="Theme.Healthmine.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Healthmine.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColorPrimary">@color/purple_dark</item>
+        <item name="elevation">0dp</item>
+        <item name="font">@font/montserrat</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="Theme.Healthmine.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="CustomChipChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/bg_color_chip_state_list</item>
+        <item name="android:textColor">@color/text_color_chip_state_list</item>
+        <item name="font">@font/montserrat</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="CustomChipGroup" parent="@style/Widget.MaterialComponents.ChipGroup">
+        <item name="android:layout_margin">8dp</item>
+        <item name="chipSpacingHorizontal">8dp</item>
+    </style>
+
+    <!--title-->
+    <style name="MyTitleTextStyle">
+        <item name="font">@font/montserrat</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <!--body text-->
+    <style name="BodyTextStyle1">
+        <item name="font">@font/montserrat</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--text boxes / dropdown / dates-->
+    <style name="BodyTextStyle2">
+        <item name="font">@font/montserrat</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!--buttons / labels / graph keys-->
+    <style name="BodyTextStyle3">
+        <item name="font">@font/montserrat</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

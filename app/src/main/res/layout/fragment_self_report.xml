@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/BodyTextStyle1"
+        android:textColor="@color/purple_dark"
+        android:layout_gravity="center"
+        android:text="@string/self_report_first_question"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:id="@+id/diet_group"
+        android:layout_margin="8dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:layout_weight="1"
+            android:id="@+id/setting_first_yes_btn"
+            style="@style/BodyTextStyle2"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/setting_first_no_btn"
+            style="@style/BodyTextStyle2"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_dark"
+        style="@style/BodyTextStyle1"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/self_report_second_question"/>
+
+    <Spinner android:id="@+id/health_spinner"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/self_report_spinner_items"
+        style="@style/BodyTextStyle2"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_dark"
+        style="@style/BodyTextStyle1"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/self_report_third_question"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="14dp"
+        android:id="@+id/self_report_info_text_input"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_dark"
+        android:layout_marginTop="15dp"
+        style="@style/BodyTextStyle1"
+        android:layout_gravity="center"
+        android:text="@string/self_report_fourth_question"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:id="@+id/medication_group"
+        android:layout_margin="8dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:layout_weight="1"
+            android:id="@+id/setting_second_yes_btn"
+            style="@style/BodyTextStyle2"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/setting_second_no_btn"
+            style="@style/BodyTextStyle2"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_dark"
+        style="@style/BodyTextStyle1"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/self_report_fifth_question"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/self_report_lifestyle_text_input"
+        android:layout_marginHorizontal="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginHorizontal="10dp">
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/self_report_save_btn"
+            android:text="SAVE"
+            style="@style/BodyTextStyle2"
+            android:textColor="@color/bg_white"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/radius_button"
+            />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/self_report_cancel_btn"
+            android:text="CANCEL"
+            style="@style/BodyTextStyle2"
+            android:textColor="@color/bg_white"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/radius_button"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ic_settings_bg">
+
+    <ScrollView
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                style="@style/MyTitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="Personal"
+                android:textColor="@color/purple_dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BodyTextStyle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Name"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_dark"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        style="@style/BodyTextStyle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:text="Email"
+                        android:textAlignment="center"
+                        android:textSize="17dp"
+                        android:textColor="@color/purple_dark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/setting_name_view"
+                        style="@style/BodyTextStyle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:text="Stephen Maddow"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_dark" />
+
+                    <TextView
+                        android:id="@+id/setting_email_view"
+                        style="@style/BodyTextStyle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:singleLine="true"
+                        android:text="slychoch@yahoo.com"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_dark" />
+
+                    <Button
+                        android:id="@+id/setting_password_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/radius_button"
+                        android:text="CHANGE PASSWORD"
+                        android:textColor="@color/bg_white" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/setting_edit_info"
+                        style="@style/BodyTextStyle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:text="Edit"
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_dark"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/MyTitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:text="Permissions"
+                android:textColor="@color/purple_dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:orientation="vertical"
+                android:paddingVertical="10dp"
+                android:paddingStart="30dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/BodyTextStyle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/setting_activity_permission"
+                        android:textColor="@color/purple_dark"
+                        app:layout_constraintEnd_toStartOf="@+id/switch1"
+                        tools:layout_editor_absoluteY="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity=""
+                        android:layout_marginEnd="27dp"
+                        android:showText="false"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/BodyTextStyle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/setting_light_permission"
+                        android:textColor="@color/purple_dark"
+                        app:layout_constraintEnd_toStartOf="@+id/switch4"
+                        tools:layout_editor_absoluteY="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Switch
+                        android:id="@+id/switch4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity=""
+                        android:layout_marginEnd="27dp"
+                        android:showText="false"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/BodyTextStyle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/setting_dexcom_permission"
+                            android:textColor="@color/purple_dark"
+                            app:layout_constraintEnd_toStartOf="@+id/switch6"
+                            tools:layout_editor_absoluteY="2dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Switch
+                            android:id="@+id/switch6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:layout_marginEnd="27dp"
+                            android:showText="false"
+                            android:textOff="OFF"
+                            android:textOn="ON"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/BodyTextStyle3"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:text="@string/setting_dexcom_sub_permission"
+                        android:textColor="@color/purple_dark"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.158"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+<!--            <TextView-->
+<!--                style="@style/MyTitleTextStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginBottom="15dp"-->
+<!--                android:text="Sync"-->
+<!--                android:textColor="@color/purple_dark" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/rounded_edittext"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="20dp"-->
+<!--                android:weightSum="2">-->
+
+<!--                <com.ebanx.swipebtn.SwipeButton-->
+<!--                    android:id="@+id/setting_syncTo_btn"-->
+<!--                    android:layout_width="280dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    app:button_bottom_padding="8dp"-->
+<!--                    app:button_image_disabled="@drawable/ic_baseline_cloud_upload_24"-->
+<!--                    app:button_image_enabled="@drawable/ic_baseline_check_circle_24"-->
+<!--                    app:button_left_padding="5dp"-->
+<!--                    app:button_right_padding="8dp"-->
+<!--                    app:button_top_padding="5dp"-->
+<!--                    app:has_activate_state="true"-->
+<!--                    app:inner_text="Swipe to Sync To Google"-->
+<!--                    app:inner_text_background="@drawable/radius_button"-->
+<!--                    app:inner_text_bottom_padding="15dp"-->
+<!--                    app:inner_text_color="@color/bg_white"-->
+<!--                    app:inner_text_size="16dp"-->
+<!--                    app:inner_text_top_padding="15dp" />-->
+
+<!--                <com.ebanx.swipebtn.SwipeButton-->
+<!--                    android:id="@+id/setting_syncFrom_btn"-->
+<!--                    android:layout_width="280dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    app:button_bottom_padding="8dp"-->
+<!--                    app:button_image_disabled="@drawable/ic_baseline_cloud_download_24"-->
+<!--                    app:button_image_enabled="@drawable/ic_baseline_check_circle_24"-->
+<!--                    app:button_left_padding="5dp"-->
+<!--                    app:button_right_padding="8dp"-->
+<!--                    app:button_top_padding="5dp"-->
+<!--                    app:has_activate_state="true"-->
+<!--                    app:inner_text="Swipe to Sync From Google"-->
+<!--                    app:inner_text_background="@drawable/radius_button"-->
+<!--                    app:inner_text_bottom_padding="15dp"-->
+<!--                    app:inner_text_color="@color/bg_white"-->
+<!--                    app:inner_text_size="16dp"-->
+<!--                    app:inner_text_top_padding="15dp" />-->
+
+<!--            </LinearLayout>-->
+
+            <Button
+                android:id="@+id/setting_logout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius_button"
+                android:backgroundTint="@color/bg_white"
+                android:text="LOGOUT"
+                android:textColor="@color/bg_white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/progress_bar_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading Data" />
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+

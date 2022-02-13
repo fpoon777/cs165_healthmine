@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_dark">#FF4C3061</color>
+    <color name="purple_medium">#FF745E85</color>
+    <color name="bg_white">#FFF9F7FC</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    this is the purple color that is used for the theme. Can change later-->
+    <color name="theme_purple">#894395</color>
+
+    <!-- purple used for graph -->
+    <color name="graph_high">#894395</color>
+    <color name="graph_medium">#E987D9</color>
+    <color name="graph_low">#EDCBF2</color>
+
+    <!-- color used for self report history view -->
+    <color name="health_good">#01DD32</color>
+    <color name="health_ok">#FFEB3B</color>
+    <color name="health_sick">#FF9800</color>
+    <color name="health_very_sick">#FF5722</color>
+</resources>
